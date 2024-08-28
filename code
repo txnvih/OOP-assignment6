@@ -1,0 +1,52 @@
+import java.util.*;
+
+public class ASS6 {
+	public static void main(String [] args)
+	{
+		try {
+			int Num1;
+			int Num2;
+			Scanner sc= new Scanner(System.in);
+			System.out.println("For Arithmetic Exception\n");
+			System.out.println("Enter first number: \n");
+			Num1= sc.nextInt();
+			System.out.println("Enter second number: \n");
+			Num2= sc.nextInt();
+			int Division=Num1/Num2;
+			System.out.println("Division is "+Division);
+			
+		}catch(ArithmeticException e)
+		{
+			System.out.println(e);
+		}
+		try {
+			Scanner sc= new Scanner(System.in);
+			System.out.println("For Number Format Exception\n");
+			System.out.println("Enter first number: \n");
+			String Num1= sc.nextLine();
+			System.out.println("Enter second number: \n");
+			String Num2= sc.nextLine();
+			int Division=Integer.parseInt(Num1)/Integer.parseInt(Num2);
+			System.out.println("Division is "+Division);
+		}catch(NumberFormatException e1) {
+			System.out.println(e1);
+		}
+		try {
+			Scanner sc= new Scanner(System.in);
+			int a[]= new int[2];
+			System.out.println("For Array Index Out of Bounds Exception\n");
+			System.out.println("Enter first number(for array): \n");
+			a[1]= sc.nextInt();
+			System.out.println("Enter second number(for array): \n");
+			a[2]= sc.nextInt();
+			System.out.println("Enter third number(for array): \n");
+			a[3]= sc.nextInt();
+			System.out.println(a[0]+"\n"+a[1]+"\n"+a[2]);
+		}catch(ArrayIndexOutOfBoundsException e)
+		{
+			System.out.println(e);
+		}
+		
+		System.out.println("Success.");
+	}
+}
