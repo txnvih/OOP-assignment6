@@ -1,0 +1,25 @@
+For Arithmetic Exception
+Enter first number: 
+3
+Enter second number: 
+0
+java.lang.ArithmeticException: / by zero
+
+
+For Number Format Exception
+Enter first number: 
+e
+Enter second number: 
+6
+java.lang.NumberFormatException: For input string: "e"
+
+
+For Array Index Out of Bounds Exception
+Enter first number(for array): 
+5
+Enter second number(for array): 
+7
+java.lang.ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 2
+
+
+Success.
